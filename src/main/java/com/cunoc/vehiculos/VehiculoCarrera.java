@@ -8,16 +8,20 @@ public class VehiculoCarrera extends Vehiculo implements Turbo {
     public VehiculoCarrera(String combustible, int cantidadGasolina) {
         super(combustible, cantidadGasolina);
         super.velocidadMax = 350;
-        super.cantidadPasajeros = 4;
+        super.cantidadPasajeros = 1;
 
     }
 
     public void acciones() {
         System.out.println("Soy un auto de carrera soy super rapido con turbo");
         if (giroDerecha(45)) {
-
+            System.out.println("girando a la deracha rapido pero con precauicion");
         }
+        System.out.println("solo puedo llevar a 1 pasajero");
     }
+    
+    
+    
 
     @Override
     public int calcularAcelracion() {

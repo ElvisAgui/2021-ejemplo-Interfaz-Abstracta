@@ -12,8 +12,9 @@ public class Camioneta extends Vehiculo implements TrasportarPersonas {
         super.cantidadPasajeros = 200;
         this.velociada = velociada;
     }
-
-    public void datos() {
+    
+    @Override
+    public void acciones() {
         System.out.println("Soy una Camioneta, trasporto a personas de un logar a otro");
         if (calcularAcelracion() > 0) {
             System.out.println("Acelerando para superar mi tiempo record");

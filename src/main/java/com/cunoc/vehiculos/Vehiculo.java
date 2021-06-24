@@ -24,7 +24,7 @@ public abstract class Vehiculo implements GiroDerecha, GiroIzquierda{
         this.cantidadGasolina = cantidadGasolina;
     }
     
-
+    public abstract void acciones();
 
     public abstract int calcularAcelracion();
 

@@ -13,6 +13,7 @@ public class VehiculoCarga extends Vehiculo implements trasportarMaterial {
         this.Carga = Carga;
     }
 
+    @Override
     public void acciones() {
         System.out.println("Soy un camion de Carga");
         giroDerecha(78);
